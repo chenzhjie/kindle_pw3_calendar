@@ -76,7 +76,7 @@ fi
 CHECKBATTERY=`gasgauge-info -s`
 
 if [ ${CHECKBATTERY} -le 21 ]; then
-	/usr/bin/curl http://192.168.1.221:8000/battery
+	/usr/bin/curl http://192.168.1.222:8000/battery
 	eips -f -g $NOPOWERFILE
 fi
 
